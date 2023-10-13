@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "databasin"
+version = "0.1.0"
+authors = [
+    {name = "ITLackey", email = "itlackey@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+]
+
+dependencies = [
+    "click",
+    "inquirer",
+    "requests"
+]
+
+[project.scripts]
+databasin = "databasin:main"
